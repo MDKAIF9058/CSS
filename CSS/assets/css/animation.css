@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+.div1{
+    height: 200px;
+    width: 200px;
+    background-color: linear-gradient(purple,rgb(3, 248, 236));
+    border-radius: 50%;
+    position: absolute;
+
+    animation-name: kaif;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+
+}
+
+
+@keyframes kaif {
+    0%{
+        left: 0px;
+        top: 0px;
+        background-image: linear-gradient(green,purple);
+
+    }
+    25%{
+        left: 400px;
+        top: 0;
+        background-image: linear-gradient(blue, deeppink);
+
+
+    }
+    50%{
+        left:400px;
+        top: 400px;
+        
+        background-image: linear-gradient(black,skyblue);
+    
+    }
+    75%{
+        left:0px;
+        top: 400px;
+        
+        background-image: linear-gradient(skyblue, black);
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+        background-image: linear-gradient(pink,red);
+        
+
+    }
+}
