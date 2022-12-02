@@ -1,0 +1,67 @@
+body 
+{
+    margin:0;
+
+}
+nav{
+    background-color: aqua;
+}
+h1{
+    color:aliceblue;
+}
+.flex-container{
+    display:flex;
+}
+a{
+    color:beige;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    transition: 2s all;
+
+}
+a:hover{
+    background-color: deepskyblue;
+    color: black;
+
+}
+.flex-item1{
+    flex:20%;
+    background-color: brown;
+}
+.flex-item2{
+    flex:80%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display:inline;
+    margin-left:40px;
+}
+.slider{
+    height: 600px;
+    background-image: url(../images/beach.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   animation-name: animate;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes animate{
+    from{
+        background-image: url('../images/beach.jpeg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    to{
+        background-image: url('../images/mountain.jpeg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+}
