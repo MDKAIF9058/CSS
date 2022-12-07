@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            height: auto;
+            width: 700px;
+            background-color: aqua;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 20px;
+            column-gap: 20px;
+            row-gap: 20px;
+            color: orange;
+        }
+        .item{
+            height: 100px;
+            background-color: darkseagreen;
+            
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: transparent;
+            text-align:center ;
+        }
+        input[type="text"]
+        {
+            padding: 20px 20px;
+            width: 90%;
+            border-start-end-radius: 1;
+            border-end-end-radius: 4;
+        }
+        button{
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 22px;
+            border: none;
+            transition: 1s all;
+
+        }
+        button:hover{
+            background-color: darkred;
+            border: none;
+        }
+        .main{
+            text-align: center;
+            color: bisque;
+        }
+        .heading{
+            font-size: 80px;
+            background-image: linear-gradient(purple, darkblue);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">Calculator</h1>
+    </div>
+    
+    <div class="container">
+        <div class="item item1"> <input type="text" name="" id=""> 
+        </div>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+        <button class="item">1</button>
+    </div>
+
+</body>
+</html>
